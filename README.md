@@ -14,8 +14,10 @@ and ALLT.dat for Love wave), resulting model (DSurfRTomo.inMeasurement.dat)
 in the crust of the eastern Himalayan syntaxis is provided in example/
 
 #############
+
 2019/05/18
 The code may still need minor modification  
+
 ##############
 
 output (default DSurfRTomo.inMeasure.dat) is in the format
@@ -31,8 +33,10 @@ using the following equaitons:
 
 
 ##############
+
 2021/07/31
 1. parallel computation can be used
 2. noise can be added to synthetic data
+
 ##############
 
