@@ -1,1 +1,17 @@
-aaaa
+The usage of DRadiSurfTomo is quite similar to 
+DSurfTomo ()
+and
+DAzimSurfTomo ()
+
+Here are some notes that may be useful.
+
+1. model setup
+
+
+2. parameter setup
+
+
+3. checkerboard tests
+
+
+4. plot the 
