@@ -2,9 +2,10 @@ Direct surface wave radial anisotropy tomography package (DSurfRTomo)
 
 please refer to:
 
-	Hu, S., H. Yao, and H. Huang (2019), Direct surface wave radial 
+	Hu, S., H. Yao, and H. Huang (2020), Direct surface wave radial 
 	anisotropy tomography in the crust of the eastern Himalayan 
-	syntaxis. Submitted
+	syntaxis. Journal of Geophysical Research: Solid Earth, 125, 
+	e2019JB018257. https://doi.org/10.1029/2019JB018257
 
 for details of the code
 
