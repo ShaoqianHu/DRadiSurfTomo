@@ -40,7 +40,7 @@
    real,dimension(:),allocatable:: dsyn, cbst, wt, dtres, datweight
    real,dimension(:),allocatable:: dsynR, dsynL
    real,dimension(:),allocatable:: distR, distL, obstR, obstL
-   real,dimension(:),allocatable:: pvallR, pvallL, depRp, pvRp
+   real,dimension(:),allocatable:: pvallR, pvallL, depRp
    real, dimension (:,:), allocatable :: scxfR,sczfR, scxfL, sczfL
    real, dimension (:,:,:), allocatable :: rcxfR,rczfR, rcxfL, rczfL
    integer,dimension(:,:),allocatable::wavetypeR,igrtR,nrc1R
@@ -94,7 +94,7 @@
 
    ! output some information
    write(*,*)
-   write(*,*),'                    DRadiSurfTomo' 
+   write(*,*),'                    DRadiSurfTomo (2021/08/08)' 
    write(*,*)
 
    ! read input file
@@ -202,9 +202,9 @@
    endif
    allocate(pvallR(nrc*nsrc*kmaxR),depRp(nrc*nsrc*kmax),&
             pvallL(nrc*nsrc*kmaxL), &
-            pvRp(nrc*nsrc*kmax),stat=checkstat)
+            stat=checkstat)
    if(checkstat>0)then
-      write(*,*)'error allocate pvall, depRp, pvRp'
+      write(*,*)'error allocate pvall, depRp'
    endif
 
    ! read Rayleigh wave
@@ -763,7 +763,7 @@
    deallocate(nsrc1R,nsrc1L)
    deallocate(igrtR,igrtL)
    deallocate(obstR,obstL,distR, distL)
-   deallocate(pvallR, pvallL,depRp,pvRp)
+   deallocate(pvallR, pvallL,depRp)
    deallocate(depz)
    deallocate(dv,norm,vsf,gam,vsftrue,gamtrue)
    deallocate(rwR,iwR,colR,cbst,dsynR,datweight,wt,dtres)

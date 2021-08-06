@@ -34,9 +34,11 @@ using the following equaitons:
 
 ##############
 
-2021/07/31
+2021/08/08
 1. parallel computation can be used
 2. noise can be added to synthetic data
-
+3. add roughness computation
+4. output Rayleigh/Love raypath at the final iteration
+5. add some useful scripts in utils/
 ##############
 

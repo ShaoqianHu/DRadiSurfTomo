@@ -1,0 +1,40 @@
+ 1th iteration ...
+weight1 and weight2 are:                  7.3912      0.1696
+mean, std_devs and rms of residual:     -61.3766    508.2903      0.5120
+Roughness of the model                   19.2834      3.3198
+ 2th iteration ...
+weight1 and weight2 are:                  1.9622      0.0509
+mean, std_devs and rms of residual:     -27.9789    263.9125      0.2654
+Roughness of the model                   23.3662      4.9766
+ 3th iteration ...
+weight1 and weight2 are:                  0.3917      0.0309
+mean, std_devs and rms of residual:      -1.4449    130.4364      0.1304
+Roughness of the model                   25.8953      5.4217
+ 4th iteration ...
+weight1 and weight2 are:                  0.1204      0.0269
+mean, std_devs and rms of residual:      -8.2505     87.4364      0.0878
+Roughness of the model                   26.6098      5.8120
+ 5th iteration ...
+weight1 and weight2 are:                  0.0962      0.0168
+mean, std_devs and rms of residual:      -6.1604     73.8394      0.0741
+Roughness of the model                   26.9044      5.8601
+ 6th iteration ...
+weight1 and weight2 are:                  0.0923      0.0130
+mean, std_devs and rms of residual:      -0.6861     69.4936      0.0695
+Roughness of the model                   27.1750      5.9471
+ 7th iteration ...
+weight1 and weight2 are:                  0.0834      0.0123
+mean, std_devs and rms of residual:      -0.7841     66.6315      0.0666
+Roughness of the model                   27.3735      6.0039
+ 8th iteration ...
+weight1 and weight2 are:                  0.0825      0.0115
+mean, std_devs and rms of residual:      -0.6721     65.5613      0.0656
+Roughness of the model                   27.4637      6.0330
+ 9th iteration ...
+weight1 and weight2 are:                  0.0887      0.0112
+mean, std_devs and rms of residual:      -0.7172     66.7446      0.0667
+Roughness of the model                   27.5473      6.0572
+10th iteration ...
+weight1 and weight2 are:                  0.0881      0.0112
+mean, std_devs and rms of residual:      -0.8842     66.6026      0.0666
+Roughness of the model                   27.6257      6.0753

@@ -60,17 +60,21 @@
    enddo
    mmaxvp=maxvp/2
 
+   if(writepath.eq.1)open(40,file='raylaiegh_path.out')
    call CalSurfG(nx,ny,nz,mmaxvp,vsv,iwR,rwR,colR,dsynR,&
                  goxd,gozd,dvxd,dvzd,kmaxRc,kmaxRg,0,0,&
                  tRc,tRg,dum,dum,wavetypeR,igrtR,periodsR,depz,minthk,&
                  scxfR,sczfR,rcxfR,rczfR,nrc1R,nsrc1R,kmaxR,&
                  nsrc,nrc,narR,writepath)
+   if(writepath.eq.1)close(40)
 
+   if(writepath.eq.1)open(40,file='love_path.out')
    call CalSurfG(nx,ny,nz,mmaxvp,vsh,iwL,rwL,colL,dsynL,&
                  goxd,gozd,dvxd,dvzd,0,0,kmaxLc,kmaxLg,&
                  dum,dum,tLc,tLg,wavetypeL,igrtL,periodsL,depz,minthk,&
                  scxfL,sczfL,rcxfL,rczfL,nrc1L,nsrc1L,kmaxL,&
                  nsrc,nrc,narL,writepath)
+   if(writepath.eq.1)close(40)
 
    ! deallocate variables
    deallocate(vsv,vsh)
