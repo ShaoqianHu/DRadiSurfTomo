@@ -1,4 +1,5 @@
-mdlFile='DRadiSurfTomo.inMeasure.dat';
+%mdlFile='DRadiSurfTomo.inMeasure.dat';
+mdlFile='DRadiSurfTomo.inMeasure.dat.iter008';
 plotDep=30; % plot horizantal slice at plotDep (30) km
 
 dep=[0,5,10,15,20,25,30,35,40,45,50,55,60,70,80,90,100];
@@ -24,7 +25,8 @@ i=1;
 for idep=1:ndep
 	for ilon=1:nlon
 		for ilat=1:nlat
-			mdl(ilat,ilon,idep)=aa(i,4);
+			%mdl(ilat,ilon,idep)=aa(i,4);
+			mdl(ilat,ilon,idep)=aa(i,5);
 			i=i+1;
 		end
 	end
@@ -51,30 +53,4 @@ rwb=flipud(rwb);
 imagesc(imagelon,imagelat,image); colormap(flipud(jet)); colorbar('location','eastoutside');
 hold on;
 set(gca,'ydir','normal','Fontsize',14,'pos',[0.15 0.3 0.6 0.4]);
-
-% plot fault
-%{
-fp=fopen('fault.dat','r');
-il=0;
-while 1
-	line=fgetl(fp);
-	if ~ischar(line)
-		break;
-	else
-		if(line(1)=='>')
-			il=il+1;
-			if il > 1
-				plot(ft(1,:),ft(2,:),'k','LineWidth',1.2);
-				hold on;
-			end
-			ft=[];
-		else
-			dum=str2num(line);
-			loc=[dum(1);dum(2)];
-			ft=[ft,loc];
-		end
-	end
-end
-fclose(fp);
-%}
 
