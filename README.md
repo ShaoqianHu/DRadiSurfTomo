@@ -9,6 +9,28 @@ please refer to:
 
 for details of the algorithm
 
+The code is based on previous studies, especially on the implementation
+of DSurfTomo:
+
+	Fang, H., H. Yao, H. Zhang, Y-C Huang, and R. D. van der Hilst (2015)
+	Direct inversion of surface wave dispersion for three-dimensional 
+	shallow crustal structure based on ray tracing methodology and 
+	application. Geophysical Journal International, 201, 1251-1263.
+
+Please also refer to:
+
+	Rawlinson, N. and M. Sambridge (2004) Wave front evolution in 
+	strongly heterogeneous layered media using the fast marching method,
+	Geophysical Journal International, 156(3), 631-647
+
+for implementation of the fast marching method, and
+
+	Herrmann, R. B. (2013) Computer programs in seismology: An evolving
+	tool for instruction and research. Seismological Research Letter,
+	84(6), 1081-1088
+
+for implementation of the 1-D surface wave dispersion kernel.
+
 The dispersion data (ALLR.dat for Rayleigh wave 
 and ALLT.dat for Love wave), resulting model (DSurfRTomo.inMeasurement.dat) 
 in the crust of the eastern Himalayan syntaxis is provided in example/
@@ -34,11 +56,11 @@ use the following equaitons:
 ##############
 
 2021/08/08
-1. parallel computation can be used
+1. check parallel computation can be used
 2. add roughness computation
 3. output Rayleigh/Love raypath at the final iteration
 4. add some useful scripts in utils/
-5. check the noiselevel can be used in the synthetic tests
+5. check noiselevel can be used in the synthetic tests
 
 ##############
 
